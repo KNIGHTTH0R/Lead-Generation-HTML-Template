@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <!--<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>-->
+  <link href="css/popup.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/w3.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+  <script type='text/javascript' src='js/progressbar.js'></script>
+  
+  <style>  
+    /*Giving error when added to style.css. That's why this is here*/  
+    ul {
+      list-style-image: url('img/checkmark_icon.png');
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <p>Emlaknote Sınırlı İndirim Kodu Fırsatı</p>
+    <div class="subtitle">
+      <p>Bünyemizdeki tüm projelerde %5 indirim kodunuzu alın!</p>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-3 sidenav"></div>
+      <div class="col-sm-6 text-left"> 
+        <div class="title-box">
+          <p><strong>İNDİRİM KODUMU GÖNDER</strong>'e tıklayın ve</br>projelerden %5 indirim kodunuzu kazanın.</p>
+        </div>
+        <div class="main-box">
+          <div class="video-box">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Xroa4VOTq4M" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <span style="cursor:pointer"><a id="myBtn"><div class="action-button">%5 İNDİRİM KODUMU AL</div></a></span>
+          </br>
+          <a style="font-size: 15px; text-decoration: underline;" href="#">ya da buraya tıklayarak indirim kodunuzu telefonunuza SMS olarak alın</a>
+          <ul>
+            <li><p>Why we shut down our $1,000,000 advertising campaign but still raked in leads and customers every single day right from our fan page...</p></li>
+            <li><p>The 3 “edge rank” changes some fan page owners are already experiencing & how they could eliminate your fan page’s growth...</p></li>
+            <li><p>How we beat out their new “mandate” for fan page owners and still attracted 14,281 new fans without paying for advertising...</p></li>
+          </ul>
+          <span style="cursor:pointer"><a id="myBtn1"><div class="action-button">%5 İNDİRİM KODUMU AL</div></a></span>
+          </br>
+          <a style="font-size: 15px; text-decoration: underline;" href="#">ya da buraya tıklayarak indirim kodunuzu telefonunuza SMS olarak alın</a>
+        </div>
+      </div>
+    <div class="col-sm-3 sidenav"></div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <div class="footer-right">
+    <p>After confirming your email, you’ll be taken directly to our free training course. You will then get access to our daily premium delivered content that will show you how other entrepreneurs are using fan pages to build their businesses. © 2017</p>
+  </div>
+</footer>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <div class="w3-container">
+        <!--<p style="text-align: center;">Bünyemizdeki tüm projelerde %5 indirim kodunuz için bir adım daha kaldı</p>-->
+        <div class="w3-light-grey w3-round">
+          <div id="myBar" class="w3-container w3-green w3-round w3-center" style="width:0%">0%</div>
+        </div>
+        <br>
+        <!--<button class="w3-button w3-green" onclick="move()">Click Me</button>--> 
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="popup-left">
+            <img src="img/phone2.png">
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="popup-right">
+            <h2>Kodunuza erişim için aşağıya email ve cep telefonunuzu girin!</h2>
+            <form action="/action_page.php">
+              <input type="text" name="email" placeholder="Email adresi...">
+              <br>
+              <input type="submit" value="HEMEN KODUNUZA ULAŞIN">
+            </form> 
+            <div style="text-align: center">
+              <i class="icon-lock"></i>
+                SPAM'dan en az sizin kadar biz de nefret ediyoruz.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+    -->
+  </div>
+</div>
+
+
+<script type='text/javascript' src='js/popup.js'></script>
+
+</body>
+</html>
