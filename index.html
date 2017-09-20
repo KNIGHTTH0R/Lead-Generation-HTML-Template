@@ -13,9 +13,9 @@
   <link href="css/w3.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
   <script type='text/javascript' src='js/progressbar.js'></script>
-  <script src="app/bower_components/angular/angular.js"></script>
-  <script src="app/UsersController.js"></script>
-  <script src="app/UsersService.js"></script>  
+  <!-- <script src="app/bower_components/angular/angular.js"></script> -->
+  <!-- <script src="app/UsersController.js"></script> -->
+  <!-- <script src="app/UsersService.js"></script>   -->
 
 
 
@@ -26,7 +26,7 @@
     }
   </style>
 </head>
-<body ng-app='Users' ng-controller='UsersController'>
+<body >
 <h1>{{1+1}}</h1>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -99,11 +99,11 @@
           <div class="popup-right">
             <h2>Kodunuza erişim için aşağıya email ve cep telefonunuzu girin!</h2>
             <form action="/action_page.php">
-            <input type="text" name="email" placeholder="Email adresi..." ng-model="snEmail">
+            <input type="text" name="email" placeholder="Email adresi...">
             <label>{{snEmail}}</label>
               <br>
 <!--                <button ng-click="signUp()">HEMEN KODUNUZA ULAŞIN</button>
- -->              <input href="#"   value="HEMEN KODUNUZA ULAŞIN" ng-click='signUp()'>
+ -->              <input href="#"   value="HEMEN KODUNUZA ULAŞIN" >
             </form> 
             <div style="text-align: center">
               <i class="icon-lock"></i>
@@ -123,6 +123,23 @@
 
 
 <script type='text/javascript' src='js/popup.js'></script>
+<script type="text/javascript">
+  var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://us16.api.mailchimp.com/3.0/lists/87e64cc485/members",
+  "method": "GET",
+  "headers": {
+    "authorization": "apikey 64b8f2097a6c8098e1c3fe8aa9b3b309-us16",
+    "cache-control": "no-cache",
+    "postman-token": "8225010c-5d47-a9e4-9d34-3ddf09bc351d"
+  }
+}
 
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+</script>
 </body>
+
 </html>
