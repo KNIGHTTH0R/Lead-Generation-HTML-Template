@@ -13,7 +13,12 @@
   <link href="css/w3.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
   <script type='text/javascript' src='js/progressbar.js'></script>
-  
+  <script src="app/bower_components/angular/angular.js"></script>
+  <script src="app/UsersController.js"></script>
+  <script src="app/UsersService.js"></script>  
+
+
+
   <style>  
     /*Giving error when added to style.css. That's why this is here*/  
     ul {
@@ -21,8 +26,8 @@
     }
   </style>
 </head>
-<body>
-
+<body ng-app='Users' ng-controller='UsersController'>
+<h1>{{1+1}}</h1>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <p>Emlaknote Sınırlı İndirim Kodu Fırsatı</p>
@@ -94,9 +99,11 @@
           <div class="popup-right">
             <h2>Kodunuza erişim için aşağıya email ve cep telefonunuzu girin!</h2>
             <form action="/action_page.php">
-              <input type="text" name="email" placeholder="Email adresi...">
+            <input type="text" name="email" placeholder="Email adresi..." ng-model="snEmail">
+            <label>{{snEmail}}</label>
               <br>
-              <input type="submit" value="HEMEN KODUNUZA ULAŞIN">
+<!--                <button ng-click="signUp()">HEMEN KODUNUZA ULAŞIN</button>
+ -->              <input href="#"   value="HEMEN KODUNUZA ULAŞIN" ng-click='signUp()'>
             </form> 
             <div style="text-align: center">
               <i class="icon-lock"></i>

@@ -1,0 +1,23 @@
+{
+  "name": "emlaknote",
+  "description": "indirim",
+  "main": "bower",
+  "keywords": [
+    "ng"
+  ],
+  "authors": [
+    "me"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.6"
+  }
+}
